@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- TITLE -->
+	<title>List Video</title>
+<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/cssall.css" id="style-css"/>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+
+<body>
+	
+<div class="body">	
+	<!--Header-->
+	<div class="header">
+		<a class="Email" href=""><i class="fa fa-envelope"></i>&nbsp E-mail &nbsp </a>
+		<a class="Email" href=""><i class="fa fa-twitter"></i>&nbsp Twitter &nbsp </a>
+		<a class="Signin" href="">&nbsp Help</a>
+		<a class="Signin" href="Signup.html">&nbsp Sign up</a>
+		<a class="Signin" onclick="document.getElementById('id01').style.display='block'">&nbsp Log in</a>
+		
+		<p align="center"><img src="Image/logo_t_ara_png_by_msgushi-d682tu8.png"/></p>
+	</div>
+
+	<!--Taskbar-->
+	
+	<div class="taskbar">
+		<a class="titletaskbar" href="Home.html">Home</a>
+		<a class="titletaskbar" href="listvideo.html">List Video</a>
+		<a class="titletaskbar" href="Profile.html">T-ara Profile</a>
+		<a class="titletaskbar" href="creatvideo.html">Creat  Video</a>
+		<a class="titletaskbar" href="MV.html">MV/Performance</a>
+	</div>
+	
+	<!--List Video -->
+<div class="background">
+	<div id="container">
+		<h1 class ="title">List Video</h1>
+		<h2 class="asd" onclick="openNav()">+ Creat Video</h2>				
+		<div id="video-container">
+		</div>
+		
+		<hr>
+		<p align="center">
+			<button id="btn-previous" onclick="previous();" style="display: none">Previous</button>&nbsp; &nbsp;
+			<button id="btn-next" onclick="next();">Next</button>              
+		</p>
+		
+		<div class="footer">	
+			<h3>Author by datto</h3>
+		</div>		
+	</div>
+
+	<div id="myModal" class="modal">	
+	<span class="close" onclick="closeModal()">×</span>
+		<div id="iframe"></div>
+	</div>
+</div>
+	
+			<!--Login-->	
+<div id="id01" class="modallogin">
+ 
+  <form class="modallogin-content animate" action="action_page.php">
+    <div class="imglogin">
+		<img src="Image/tumblr_n0d8x3nyx41qb1y78o3_250.gif" class="avatar">
+    </div>
+
+    <div class="container">
+		<label><b class="sizetext">Username</b></label>
+		<input type="text" placeholder="Enter Username" name="uname" required>
+
+		<label><b class="sizetext">Password</b></label>
+		<input type="password" placeholder="Enter Password" name="psw" required>
+
+		<input type="checkbox" class="checkbox" checked="checked"> Remember me
+	</div>
+	
+    <div class="container" style="background-color:#d9d9d9">
+		<button type="submit" class="buttonlogin" >Login</button>
+		<button type="button" class="forgotpw">Forgot Password?</button>
+    </div>
+  </form>
+</div>
+
+
+	<!-- creat video -->
+<div id="mySidenav" class="sidenav">
+	<h2 style="color:white;">Create New Video</h2>
+	<span class="close" onclick="closeModal()">×</span>
+	
+	<form onclick="validateForm();" onchange="validateForm();" onkeyup="validateForm();" style="margin: 15px 15px;">';
+	<fieldset>
+		<legend style="color:white;">Thông tin Validate</legend>
+		<table style="color:white;">
+			<tr>
+				<td>Link Youtube</td>
+				<td><input type="text" id="fullLink" onchange="getFull();" onkeyup="getFull();" </td>
+			</tr>
+			<tr>
+				<td>Youtube ID</td>
+				<td>
+					<input type="text" id="youtubeId" name="youtubeId">
+					<td id="youtubeId_msg"></td>
+				</td>                        
+			</tr>
+			<tr>
+				<td>Tên Video</td>
+				<td>
+					<input type="text" id="name" name="name">
+					<td id="name_msg"></td>
+				</td>
+			</tr>
+			<tr>
+				<td>Mô tả</td>
+				<td>
+					<textarea  class="input" name="description" rows="5" cols="50" id="description"></textarea>
+					<td id="description_msg"></td>
+				</td>
+			</tr>
+			<tr>
+				<td>Từ khóa</td>
+				<td><input type="text" id="keywords">
+					<td id="keywords_msg"></td>
+				</td>
+			</tr>
+			<tr>
+				<td>Danh mục</td>
+				<td>
+					<select id="categories" name="categories" class="input">
+						<option value="music">Âm nhạc</option>
+						<option value="video">Phim ảnh</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Thể loại</td>
+				<td>
+					<input class="checkbox" type="checkbox" name="genres" value="phim"> Phim
+					<input class="checkbox" type="checkbox" name="genres" value="music"> Nhạc
+					<input class="checkbox" type="checkbox" name="genres" value="funny_clip"> Clip hài
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+	<fieldset>
+		<legend style="color:white;">Thông tin tác giả</legend>
+		<table style="color:white;">
+			<tr>
+				<td>Tên tác giả</td>
+				<td>
+					<input type="text" id="authorName" name="authorName">
+					<td id="authorName_msg"></td>
+				</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>
+					<input type="text" name="authorEmail" id="authorEmail">
+					<td id="authorEmail_msg"></td>
+				</td>
+			</tr>
+			<tr>
+				<td>Ngày sinh</td>
+				<td>
+					<input type="text" name="authorBirthday" id="authorBirthday">
+					<td id="authorBirthday_msg"></td>
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+	<div id="button" style="text-align: center;margin-top: 10px">
+		<input class="buttoncreat" type="button" value="Lưu" onclick="submitData()" />
+		<input class="buttoncreat" type="reset" value="Làm lại" />
+	</div>
+	
+	</form>
+</div>
+	<!-- End creat video -->
+	
+	
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/youtube-api.js"></script>
+<script>loadVideo();</script>
+<script>
+var modal = document.getElementById('id01');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<script>
+function openNav() {
+	$('#mySidenav').width('100%');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- TITLE -->
+	<title>Sign up</title>
+<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/cssall.css" />
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+
+<body>
+	
+<div class="body">
+	<!--Header-->
+	<div class="header">
+		<a class="Email" href=""><i class="fa fa-envelope"></i>&nbsp E-mail &nbsp </a>
+		<a class="Email" href=""><i class="fa fa-twitter"></i>&nbsp Twitter &nbsp </a>
+		<a class="Signin" href="">&nbsp Help</a>
+		<a class="Signin" href="Signup.html">&nbsp Sign up</a>
+		<a class="Signin" onclick="document.getElementById('id01').style.display='block'">&nbsp Log in</a>
+		
+		<p align="center"><img src="Image/logo_t_ara_png_by_msgushi-d682tu8.png"/></p>
+	</div>
+	
+	<!--Taskbar-->
+	
+	<div class="taskbar">
+		<a class="titletaskbar" href="Home.html">Home</a>
+		<a class="titletaskbar" href="listvideo.html">List Video</a>
+		<a class="titletaskbar" href="Profile.html">T-ara Profile</a>
+		<a class="titletaskbar" href="creatvideo.html">Creat  Video</a>
+		<a class="titletaskbar" href="MV.html">MV/Performance</a>
+	</div>
+	
+	<!--Sign Up-->
+	<div class="background">
+		<h1 class ="title">Sign Up</h1>
+		
+	<div class="tablesignup">	
+		<form action="#" method="post" id="myForm" >
+		<fieldset>
+			<table class="sizetext">
+				<tr>
+					<td>Account</td>
+					<td><input class="input" type="text" name="account" id="account" size="30" /></td>
+					<td id="accountError_msg"></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input class="input" type="password" name="password" id="password" size="30" /></td>
+					<td id="passwordError_msg"></td>
+				</tr>
+				<tr>
+					<td>Re-type Password</td>
+					<td><input class="input" type="password" name="confirmpassword" id="confirmpassword" size="30" /></td>
+					<td id="confirmpasswordError_msg"></td>
+				</tr>
+				<tr>
+					<td>Full Name</td>
+					<td><input class="input" type="text" name="name" id="name" size="30" /></td>
+					<td id="nameError_msg"></td>
+				</tr>
+				<tr>
+					<td>Birth Day</td>
+					<td><input class="input" type="date" name="date" id="date" /></td>
+					<td id="dateError_msg"></td>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td><select class="input" name="gender">	
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><input class="input" type="text" name="mail" id="mail" placeholder="@gmail.com" /></td>
+					<td id="mailError_msg"></td>				
+				</tr>
+				<tr>
+					<td>Phone</td>
+					<td><input class="input" type="number" name="tel" id="tel" placeholder="+84" /></td>
+					<td id="telError_msg"></td>
+				</tr>				
+				<tr>
+					<td>Agree to Terms</td>
+					<td><input class="checkbox" type="checkbox" name="hobby1" /></td>        
+				</tr>
+			</table>
+			<hr></hr>
+		<div class="container1">
+			<input class="buttonlogin" type="button" value="Save" onclick="submitForm()" />
+			<input class="buttonlogin" type="reset" value="Reset" />
+		</div>
+		</fieldset>
+		</form>	
+	</div> 		<!--Het class table-->
+	
+ 		<div id = "printout">
+        </div>
+	
+		<!--Footer-->
+		<div class="footer">
+			<p>Copyright 2016 T-ara Rule The World </p>
+		</div>
+	</div>
+</div>
+
+			<!--Login-->	
+<div id="id01" class="modallogin">
+ 
+  <form class="modallogin-content animate" action="action_page.php">
+    <div class="imglogin">
+		<img src="Image/tumblr_n0d8x3nyx41qb1y78o3_250.gif" class="avatar">
+    </div>
+
+    <div class="container">
+		<label><b class="sizetext">Username</b></label>
+		<input type="text" placeholder="Enter Username" name="uname" required>
+
+		<label><b class="sizetext">Password</b></label>
+		<input type="password" placeholder="Enter Password" name="psw" required>
+
+		<input type="checkbox" class="checkbox" checked="checked"> Remember me
+	</div>
+	
+    <div class="container" style="background-color:#d9d9d9">
+		<button type="submit" class="buttonlogin" >Login</button>
+		<button type="button" class="forgotpw">Forgot Password?</button>
+    </div>
+  </form>
+</div>
+
+	<!-- js -->
+	<script>
+	// Get the modal
+	var modal = document.getElementById('id01');
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+	</script>
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,393 @@
+	/*Header*/
+.Email{
+	margin-top:1%;
+	float:left;
+	margin-right:5%;
+	text-decoration:none;
+	color:#3399ff;
+	font-size:35px;
+}
+.Signin{
+	margin-top:1%;
+	float:right;
+	margin-left:5%;
+	text-decoration:none;
+	color:#3399ff;
+	font-size:35px;
+	cursor:pointer;
+}
+	/*End Header*/
+
+	/*Taskbar*/
+.taskbar{
+	background-color:#808080;
+	padding-top:13px;
+	height:35px;
+}
+.titletaskbar{
+	margin-left:10%;
+	font-size:20px;
+	color:white;
+}
+.titletaskbar:link{
+	text-decoration:none;
+}
+.titletaskbar:hover{
+	-webkit-animation:rainbow 1s infinite;
+	-ms-animation:rainbow 1s infinite;
+	-o-animation:rainbow 1s infinite;
+	text-decoration: underline;
+	animation:rainbow 1s infinite;
+}
+@keyframes rainbow {
+	0% {color: #ff0000;}
+	10% {color: #ff8000;}
+	20% {color: #ffff00;}
+	30% {color: #80ff00;}
+	40% {color: #00ff00;}
+	50% {color: #00ff80;}
+	60% {color: #00ffff;}
+	70% {color: #0080ff;}
+	80% {color: #0000ff;}
+	90% {color: #8000ff;}
+	100% {color: #ff0080;}
+}
+.title{
+	text-align:center;
+	color:#b30047;
+	font-size:38px;
+}
+.title2{
+	text-align:center;
+	color:#b30047;
+	font-size:35px;
+}
+	/*End Taskbar*/
+
+	/*BackGround*/
+.background{
+	background-color:#ffffcc;
+}
+body {
+
+	background-image: url(../Image/preview_7117712.jpeg);
+}
+.body{
+	margin:auto;
+	width:1250px;
+}
+	/*End BackGround*/
+
+	
+	/*Footer*/
+.footer{
+	clear:both;
+	background-color:#808080;
+	padding:1px;
+	color:white;
+	text-align:center;
+}
+	/*End Footer*/
+	
+		/* Login */
+/* Full-width input fields */
+input[type=text], input[type=password] , .input{
+	width:100%;
+    padding: 5px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	font-size:19px;
+}
+.container{
+    padding: 16px;
+}
+/* Set a style for all buttons */
+#btn-next , #btn-previous , .buttoncreat , #delete , #edit , .forgotpw , .buttonlogin{
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+	font-size:16px;
+	text-align:center;
+}
+#btn-next:hover , #btn-previous:hover , .buttoncreat:hover , .buttonlogin:hover{
+   background-color:#46a050;
+}
+#delete:hover , .forgotpw:hover{
+   background-color:#f44336;
+}
+#edit:hover{
+   background-color:#0080ff;
+}
+#btn-next , #btn-previous , .buttoncreat , .buttonlogin {
+    background-color: #4eb151;
+}
+#delete , .forgotpw{
+    background-color: #ff4d4d;
+}
+#edit{
+	background-color:#3399ff;
+}
+#btn-next , #btn-previous , .buttoncreat , #delete , #edit {
+	width:10%;
+	margin:0% 1% 0% 1%;
+}
+.buttonlogin , .forgotpw {
+	width:40%;
+	margin-left:6%;
+	
+}
+
+/* Center the image and position the close button */
+.imglogin {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+.avatar {
+    width: 35%;
+}
+/* The Modal (background) */
+.modallogin , .modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%; /* Full height */
+	z-index: 1; /* Sit on top */           
+}
+.modallogin{      
+    background-color: rgba(0,0,0,0.4);
+}
+.modal {
+    background-color: rgba(0,0,0,0.9); 
+}
+.modallogin-content{
+    background-color: #fefefe;
+    margin: 6% auto 1% auto; 
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+		/* End Login*/
+	
+		/*Home */
+.logohome{
+	height:150px;
+}
+/*Image Banner */
+.imgbanner{
+	margin:auto;
+	width:100%;
+}
+/*Image intro animation */
+.section{
+	margin:auto;
+	cursor:pointer;
+}
+.animation{
+	width:205px;
+}
+/*Introduce in Home */
+.introduce{
+	float:left;
+	margin-left:30px;
+	width:45%;
+	color:#ffff80;
+	font-size:18px;
+}
+.imgintro{
+	margin-left:50px;
+	width:80%;
+}
+.aside{
+	width:50%;
+	font-size:18px;
+	opacity:0.7;
+	margin-right:10px;
+	background:#404040;
+	float:right;
+	color: white;
+}
+/* News in Home */
+#news{
+	margin-left:40px;
+	color:white;
+}
+#news:link{
+	text-decoration:none;
+}
+#news:hover{
+	text-decoration: underline;
+	color: #ff8c1a;
+}
+		/*End Home */
+	
+		/*Sign Up*/
+.sizetext{ 	/*ca login + signup*/
+	font-size:20px;
+	padding:10px 10px 10px 10px;
+}		
+.tablesignup{ /*signup*/
+	padding: 20px 150px 50px 150px; 
+}
+.checkbox{  /*ca login + signup*/
+	zoom:1.5;
+	font-size:1.6vmin;
+}
+		/*End Sign Up*/
+		
+		/*Profile*/
+.imgprofile{
+	width:85%;
+}
+.textprofile{
+	margin:auto;
+	max-width:75%;
+	text-align:center;
+	font-size:2.3vmin;
+}
+	/*profile each member*/
+ul{
+	list-style-type:none;
+}
+.text1 { /* can chinh text 1/3/5 */
+	float:left;
+	max-width:45%;
+	padding-left:80px;
+	font-size:2.2vmin;
+}
+.text2 { /* can chinh text 2/4/6 */
+	float:right;
+	max-width:45%;
+	padding-right:110px;
+	font-size:2.2vmin;
+}
+.pic{
+	width:366px;
+	height:549px;
+}
+.change1{ 
+	float:left;
+	padding-left:110px;
+}
+.change2 {
+	float:right;
+	padding-right:80px;
+}
+.clear{
+	padding-top:100px;
+	clear:both;
+}
+		/*End Profile*/
+		
+		/* MV/Perf */
+.imgperf{
+	width:900px;
+}
+.mv{
+	margin-top:50px;
+	width:700px;
+	height:393px;
+}
+.album{
+	color:#b30047;
+	text-align:center;
+}
+		/*End MV/Perf */
+		
+	/* Partial*/
+.wrap{
+	position:relative;
+	overflow:hidden;
+	display:inline-block;
+	text-align:center;
+}
+.content{
+	position:absolute;
+	width:100%;
+	height:100%;
+	bottom:0;
+	left:0;
+	transition: all 0.2s ease-in ;
+}
+.titlehome{
+	position:relative;
+	padding-top:220px;
+	color:white;
+	border-bottom: solid 1px white;
+	bottom:-50px;
+	opacity:0;
+	transition: all 0.2s ease-in ;	
+}
+.wrap:hover .content{
+	background: rgba(0,0,0,0.2);
+}
+.wrap:hover .titlehome{
+	bottom:0;
+	opacity:1;
+	transition: all 0.2s ease-in ;
+}
+		/*End Partial */	
+		
+		/*List Video */
+#textapi{
+	font-size:30px;
+}
+#video-container{
+	clear:both;
+}
+#youtubeapi{
+	font-size:32px;
+	text-align:center;
+	color:#3366ff;
+}
+#imgapi:hover{
+	opacity:0.9;
+	cursor:pointer;
+}
+#iframe{
+	text-align:center;
+	padding-top: 15%;
+}
+/* The Close Button */
+.close {
+	margin-top:1%;
+    position: absolute;
+	top:0;
+    right: 1%;
+    color: #f1f1f1;
+    font-size: 50px;
+    font-weight: bold;
+}
+.close:hover{
+    color: #bbb;
+    cursor: pointer;
+}
+	/*End Modal*/
+				
+	/*Creat Video*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top:4%;
+    text-align:center;
+}
+.asd{
+	float:right;
+	color:white;
+	padding:5px;
+	margin-right:30px;
+	border:solid 1px red;
+	background-color:red;
+	border-radius:5px;
+	font-size:20px;
+	cursor:pointer
+}
